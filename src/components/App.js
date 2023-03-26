@@ -1,6 +1,7 @@
 import '../App.css';
 import Heading from './Heading';
 import TodoForm from './TodoForm';
+import TodoItem from './TodoItem';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
    <Heading/>
    <main>
     <TodoForm/>
+    <TodoItem/>
    </main>
    </>
   );

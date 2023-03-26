@@ -45,7 +45,7 @@ function TodoForm({onAddTodo}){
           <label htmlFor="status">Status: </label>
           <select className="form-select" id="status" value={formData.status} onChange={handleChange}>
                <option>Select</option>
-               <option value={0}>STARTED</option>
+               <option value={0}>CREATED</option>
                <option value={1}>IN PROGRESS</option>
                <option value={2}>COMPLETED</option>
                <option value={3}>CANCELLED</option>
