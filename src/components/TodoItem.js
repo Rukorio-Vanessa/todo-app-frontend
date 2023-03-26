@@ -48,7 +48,10 @@ function TodoItem({spice}){
         }
     ]);
 
-   
+    const handleDeleteTodo = (id) => {
+        const updatedTodos = todos.filter(todo => todo.id !== id);
+        setTodos(updatedTodos);
+    }
     return(
         <table className="todo-table">
             <thead>
@@ -73,7 +76,7 @@ function TodoItem({spice}){
                                 <button className="btn btn-info">Update</button>
                             </div>
                             <div className="col-6">
-                                <button className="btn btn-danger" >Delete</button>
+                                <button className="btn btn-danger" onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
                             </div>
                         </td>
                     </tr>
