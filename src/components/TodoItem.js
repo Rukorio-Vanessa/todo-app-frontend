@@ -52,6 +52,30 @@ function TodoItem({spice}){
         const updatedTodos = todos.filter(todo => todo.id !== id);
         setTodos(updatedTodos);
     }
+
+    const handleUpdateTodo = (id) => {
+        const todoToUpdate = todos.find(todo => todo.id === id);
+        const updatedTitle = prompt('Enter a new title:', todoToUpdate.title);
+        const updatedDescription = prompt('Enter a new description:', todoToUpdate.description);
+        const updatedStatus = prompt('Enter a new status:', todoToUpdate.status);
+        const updatedPriority = prompt('Enter a new priority:', todoToUpdate.priority);
+      
+        const updatedTodos = todos.map(todo => {
+          if (todo.id === id) {
+            return {
+              ...todo,
+              title: updatedTitle,
+              description: updatedDescription,
+              status: updatedStatus,
+              priority: updatedPriority
+            };
+          }
+          return todo;
+        });
+      
+        setTodos(updatedTodos);
+    }
+
     return(
         <table className="todo-table">
             <thead>
@@ -73,7 +97,7 @@ function TodoItem({spice}){
                         <td>{todo.priority}</td>
                         <td className="row">
                             <div className="col-6">
-                                <button className="btn btn-info">Update</button>
+                                <button className="btn btn-info"  onClick={() => handleUpdateTodo(todo.id)}>Update</button>
                             </div>
                             <div className="col-6">
                                 <button className="btn btn-danger" onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
