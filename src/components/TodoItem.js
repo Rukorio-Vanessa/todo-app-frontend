@@ -1,6 +1,8 @@
 import React from "react";
 
 function TodoItem({spice}){
+
+    
     return(
         <table className="todo-table">
             <thead>
