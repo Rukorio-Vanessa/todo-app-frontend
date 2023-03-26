@@ -110,3 +110,64 @@ header h3 {
   width: 50%;
 }
 
+/*form*/
+.card {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 1293px;
+  margin: 0 auto;
+}
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+form select {
+  background-color: var(--theme-primary);
+  color: white;
+}
+
+form button[type="submit"] {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  border: 1px solid var(--theme-primary);
+  background-color: white;
+  border-radius: 5px;
+  color: var(--theme-primary);
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 13px;
+  transition: all 0.3s ease;
+
+}
+
+button[type="submit"]:hover {
+  background-color: var(--theme-primary);
+  color: white;
+}
