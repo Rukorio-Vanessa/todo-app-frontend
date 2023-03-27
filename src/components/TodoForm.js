@@ -25,9 +25,9 @@ function TodoForm({onAddTodo}){
     }
       
     return(
-        <div className="card">
+        <div className="todo-card">
         <h2>Add Todo</h2>
-        <form onSubmit={handleSubmit}>
+        <form className="todo-form" onSubmit={handleSubmit}>
           <label htmlFor="title">Title: </label>
           <input
             type="text"

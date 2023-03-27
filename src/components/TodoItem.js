@@ -84,7 +84,7 @@ function TodoItem({spice}){
                     <th>Description</th>
                     <th>Status</th>
                     <th>Priority</th>
-                    <th>Options</th>
+                    <th>Edit List</th>
                 </tr>
 
             </thead>

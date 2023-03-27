@@ -5,6 +5,7 @@ import Register from './Register';
 import Login from './Login';
 import TodoForm from './TodoForm';
 import Heading from './Heading';
+import Home from './Home';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path="/heading">
         <Heading />
+      </Route>
+      <Route path="/home">
+        <Home />
       </Route>
     </Switch>
   </Router>

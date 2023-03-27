@@ -12,7 +12,7 @@ function Login(){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        history.push("/");
+        history.push("/home");
 
       };
 
