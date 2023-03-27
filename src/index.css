@@ -289,3 +289,12 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: rgb(255, 0, 0);
 }
+
+a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

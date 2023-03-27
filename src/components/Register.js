@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 function Register(){
 
@@ -49,7 +49,7 @@ function Register(){
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
         <button type="submit">Register</button>
-        <p>Already have an account? Login here</p>
+        <p>Already have an account? <Link to="/login">Login here</Link></p>
       </form>
       </div>
     )
