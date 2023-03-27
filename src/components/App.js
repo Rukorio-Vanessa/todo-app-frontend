@@ -1,6 +1,4 @@
 import '../App.css';
-import Heading from './Heading';
-import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Register from './Register';
