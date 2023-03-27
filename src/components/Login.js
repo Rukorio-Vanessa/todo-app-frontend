@@ -1,7 +1,22 @@
 import React from "react";
+
 function Login(){
     return(
-        Login
+        <div className="login-card">
+        <form>
+          <label>Email/Username:</label>
+          <input
+            type="text"
+            id="emailOrUsername"
+          />
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
     )
 }
 
